@@ -16,13 +16,13 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = faker::create('id_ID');
-        for($i=1; $i <=10 ; $i++){
-            DB::table('users')->insert([
-                'name' => $faker->name,
-                'email' => $faker->email,
-                'password' => Hash::make('Admin#1234')
-            ]);
-        }
+        // $faker = faker::create('id_ID');
+        // for($i=1; $i <=10 ; $i++){
+        //     DB::table('users')->insert([
+        //         'name' => $faker->name,
+        //         'email' => $faker->email,
+        //         'password' => Hash::make('Admin#1234')
+        //     ]);
+        // }
     }
 }

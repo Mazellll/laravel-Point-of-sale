@@ -16,15 +16,15 @@ class TransactionDetailSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = Faker::create('id_ID');
-        for($i=1; $i <=10 ; $i++){
-            DB::table('transaction_details')->insert([
-                'transaction_id' => $faker->numberBetween(1, 10),
-                'item_id' => $faker->numberBetween(1, 10),
-                'quantity' => $faker->numberBetween(1, 10),
-                'subtotal' => $faker->numberBetween(1, 10) * 10000,
+        // $faker = Faker::create('id_ID');
+        // for($i=1; $i <=10 ; $i++){
+        //     DB::table('transaction_details')->insert([
+        //         'transaction_id' => $faker->numberBetween(1, 10),
+        //         'item_id' => $faker->numberBetween(1, 10),
+        //         'quantity' => $faker->numberBetween(1, 10),
+        //         'subtotal' => $faker->numberBetween(1, 10) * 10000,
 
-            ]);
-        }
+        //     ]);
+        // }
     }
 }
